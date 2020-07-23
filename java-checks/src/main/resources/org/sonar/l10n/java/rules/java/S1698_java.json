@@ -1,6 +1,6 @@
 {
   "title": "\"==\" and \"!=\" should not be used when \"equals\" is overridden",
-  "type": "CODE_SMELL",
+  "type": "BUG",
   "status": "ready",
   "remediation": {
     "func": "Constant\/Issue",
