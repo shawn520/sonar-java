@@ -1,6 +1,6 @@
 {
   "title": "Package names should comply with a naming convention",
-  "type": "CODE_SMELL",
+  "type": "BUG",
   "status": "ready",
   "remediation": {
     "func": "Constant\/Issue",

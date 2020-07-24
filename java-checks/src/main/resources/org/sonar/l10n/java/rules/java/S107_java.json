@@ -1,6 +1,6 @@
 {
   "title": "Methods should not have too many parameters",
-  "type": "CODE_SMELL",
+  "type": "BUG",
   "status": "ready",
   "remediation": {
     "func": "Constant\/Issue",

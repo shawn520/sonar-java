@@ -1,6 +1,6 @@
 {
   "title": "Using hardcoded IP addresses is security-sensitive",
-  "type": "SECURITY_HOTSPOT",
+  "type": "BUG",
   "status": "ready",
   "remediation": {
     "func": "Constant\/Issue",
