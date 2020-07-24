@@ -104,6 +104,7 @@ import org.sonar.java.checks.serialization.SerializableComparatorCheck;
 import org.sonar.java.checks.serialization.SerializableFieldInSerializableClassCheck;
 import org.sonar.java.checks.serialization.SerializableObjectInSessionCheck;
 import org.sonar.java.checks.serialization.SerializableSuperConstructorCheck;
+import org.sonar.java.checks.spdb.ClassMustHaveJavaDocCheck;
 import org.sonar.java.checks.spring.ControllerWithSessionAttributesCheck;
 import org.sonar.java.checks.spring.PersistentEntityUsedAsRequestParameterCheck;
 import org.sonar.java.checks.spring.RequestMappingMethodPublicCheck;
@@ -203,6 +204,7 @@ import org.sonar.java.se.checks.debug.DebugMethodYieldsCheck;
 import org.sonar.java.se.checks.debug.DebugMethodYieldsOnInvocationsCheck;
 import org.sonar.plugins.java.api.JavaCheck;
 import org.sonarsource.analyzer.commons.xml.checks.SonarXmlCheck;
+import org.sonar.java.checks.spdb.ClassMustHaveJavaDocCheck;
 
 public final class CheckList {
 
@@ -222,6 +224,7 @@ public final class CheckList {
   // Rule classes are listed alphabetically
   public static List<Class<? extends JavaCheck>> getJavaChecks() {
     return Arrays.asList(
+      ClassMustHaveJavaDocCheck.class,
       AbsOnNegativeCheck.class,
       AbstractClassNoFieldShouldBeInterfaceCheck.class,
       AbstractClassWithoutAbstractMethodCheck.class,
