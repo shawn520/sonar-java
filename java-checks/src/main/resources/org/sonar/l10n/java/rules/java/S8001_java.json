@@ -11,6 +11,6 @@
   ],
   "defaultSeverity": "Major",
   "ruleSpecification": "RSPEC-2676",
-  "sqKey": "S8000",
+  "sqKey": "S8001",
   "scope": "All"
 }

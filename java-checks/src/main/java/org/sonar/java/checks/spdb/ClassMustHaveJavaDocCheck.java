@@ -13,7 +13,7 @@ import org.sonar.plugins.java.api.tree.ClassTree;
  */
 @Rule(key = "S8000")
 public class ClassMustHaveJavaDocCheck extends BaseTreeVisitor implements JavaFileScanner {
-
+  private static final String MESSAGE = "Class and Interface must have Javadoc.";
   private JavaFileScannerContext context;
   @Override
   public void scanFile(JavaFileScannerContext context) {
@@ -25,7 +25,7 @@ public class ClassMustHaveJavaDocCheck extends BaseTreeVisitor implements JavaFi
   public void visitClass(ClassTree tree) {
     Javadoc javadoc = new Javadoc(tree);
     if(javadoc.noMainDescription()) {
-      context.reportIssue(this, tree, "Class and Interface must have Javadoc.");
+      context.reportIssue(this, tree, MESSAGE);
     }
     super.visitClass(tree);
   }

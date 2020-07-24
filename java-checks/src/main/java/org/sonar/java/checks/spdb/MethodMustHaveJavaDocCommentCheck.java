@@ -13,7 +13,7 @@ import org.sonar.plugins.java.api.tree.MethodTree;
  */
 @Rule(key = "S8001")
 public class MethodMustHaveJavaDocCommentCheck extends BaseTreeVisitor implements JavaFileScanner {
-
+  private static final String MESSAGE = "Method must have Javadoc comment.";
   private JavaFileScannerContext context;
   @Override
   public void scanFile(JavaFileScannerContext context) {
@@ -25,7 +25,7 @@ public class MethodMustHaveJavaDocCommentCheck extends BaseTreeVisitor implement
   public void visitMethod(MethodTree tree) {
     Javadoc javadoc = new Javadoc(tree);
     if(javadoc.noMainDescription()) {
-      context.reportIssue(this, tree, "Method must have Javadoc comment.");
+      context.reportIssue(this, tree, MESSAGE);
     }
     super.visitMethod(tree);
   }
