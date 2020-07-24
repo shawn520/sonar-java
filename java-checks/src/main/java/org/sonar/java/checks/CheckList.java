@@ -205,6 +205,7 @@ import org.sonar.plugins.java.api.JavaCheck;
 import org.sonarsource.analyzer.commons.xml.checks.SonarXmlCheck;
 import org.sonar.java.checks.spdb.ClassMustHaveJavaDocCheck;
 import org.sonar.java.checks.spdb.MethodMustHaveJavaDocCommentCheck;
+import org.sonar.java.checks.spdb.MethodShouldHaveMatchedReturnTagCheck;
 
 public final class CheckList {
 
@@ -226,6 +227,7 @@ public final class CheckList {
     return Arrays.asList(
       ClassMustHaveJavaDocCheck.class,
       MethodMustHaveJavaDocCommentCheck.class,
+      MethodShouldHaveMatchedReturnTagCheck.class,
       AbsOnNegativeCheck.class,
       AbstractClassNoFieldShouldBeInterfaceCheck.class,
       AbstractClassWithoutAbstractMethodCheck.class,

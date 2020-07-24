@@ -1,0 +1,20 @@
+<p>
+  <code>Method</code> should have matched <code>@Return</code> Tag Javadoc comment...
+</p>
+<h2>Noncompliant Code Example</h2>
+<pre>
+// Noncompliant
+public String testWithOutReturnTag() {
+  return null;
+}
+</pre>
+<h2>Compliant Solution</h2>
+<pre>
+/**
+ *
+ * @return result;
+ */
+public String testWithReturnTag() {
+  return null;
+}
+</pre>
