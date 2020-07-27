@@ -1,0 +1,23 @@
+<p>
+  <code>Method</code> should have matched <code>@Exception</code> Tag Javadoc comment...
+</p>
+<h2>Noncompliant Code Example</h2>
+<pre>
+// Noncompliant
+/**
+ * 测试没有throws标签
+ */
+public void testWithOutTag() throws IOException {
+  System.out.println("hello");
+}
+</pre>
+<h2>Compliant Solution</h2>
+<pre>
+/**
+ *
+ * @throws IOException IOException throw IOException
+ */
+public void testWithTag() throws IOException {
+  System.out.println("hello");
+}
+</pre>
