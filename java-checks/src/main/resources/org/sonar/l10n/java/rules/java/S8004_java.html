@@ -1,0 +1,28 @@
+<p>
+  Avoid empty <code>finally</code> block.
+</p>
+<h2>Noncompliant Code Example</h2>
+<pre>
+// Noncompliant
+public void testWithEmptyFinallyBlock() {
+  try{
+    System.out.println("hello");
+  } catch (IOException e) {
+    e.printStackTrace();
+  } finally {
+
+  }
+}
+</pre>
+<h2>Compliant Solution</h2>
+<pre>
+public void test2() {
+  try{
+    System.out.println("hello");
+  } catch (IOException e) {
+    e.printStackTrace();
+  } finally {
+    return;
+  }
+}
+</pre>

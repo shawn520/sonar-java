@@ -1,0 +1,16 @@
+{
+  "title": "Avoid empty finally block.",
+  "type": "BUG",
+  "status": "ready",
+  "remediation": {
+    "func": "Constant\/Issue",
+    "constantCost": "5min"
+  },
+  "tags": [
+
+  ],
+  "defaultSeverity": "Major",
+  "ruleSpecification": "RSPEC-2676",
+  "sqKey": "S8003",
+  "scope": "All"
+}
